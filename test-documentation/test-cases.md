@@ -253,24 +253,37 @@
 
 # 6. Navigation
 
-### TC-022: Verify navigation links
+### TC-022: Verify that all five navigation links open the correct pages
 - **Preconditions:** Website is accessible.
 - **Steps:**
   1. Open the homepage.
-  2. Click each navigation link.
-  3. Observe the destination.
-- **Expected Result:** Each navigation link opens the correct page.
-- **Actual Result:** Not yet tested.
-- **Status:** Not Run
+  2. Locate the main navigation menu.
+  3. Click each navigation link: Начало, За нас, Услуги, Проекти, and Контакти.
+  4. Verify that each link opens its corresponding page.
+- **Expected Result:** All five navigation links are clickable and open the correct corresponding pages.
+- **Actual Result:** All five navigation links worked correctly and opened their corresponding pages.
+- **Status:** Pass
 
 ### TC-023: Verify logo navigation
 - **Preconditions:** Website is open on a page other than the homepage.
 - **Steps:**
-  1. Click the website logo.
+  1. Open any page other than the homepage.
+  2. Click the website logo.
+  3. Observe the destination.
 - **Expected Result:** The user is redirected to the homepage.
-- **Actual Result:** Not yet tested.
-- **Status:** Not Run
+- **Actual Result:** Clicking the website logo redirected to the homepage successfully.
+- **Status:** Pass
 
+### TC-028: Verify navigation consistency across all five pages
+- **Preconditions:** Website is accessible.
+- **Steps:**
+  1. Open each of the five website pages.
+  2. Inspect the navigation menu on each page.
+  3. Click the available navigation links from each page.
+  4. Verify that the links respond correctly and open the corresponding pages.
+- **Expected Result:** Navigation works consistently across all five pages without broken links or navigation errors.
+- **Actual Result:** Navigation worked consistently across all five pages during inspection.
+- **Status:** Pass
 ---
 
 # 7. Responsive Design
