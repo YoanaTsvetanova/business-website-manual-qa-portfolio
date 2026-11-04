@@ -337,6 +337,50 @@
 
 ---
 
+# 8. Browser Compatibility
+
+### TC-029: Verify website compatibility in Google Chrome
+- **Preconditions:** Website is accessible. Google Chrome is available.
+- **Steps:**
+  1. Open Google Chrome.
+  2. Navigate to https://bielektra.com/.
+  3. Open each of the five pages: Начало, За нас, Услуги, Проекти, and Контакти.
+  4. Check page layout, text, images, and interactive elements.
+  5. Test the navigation menu and logo functionality.
+  6. Observe whether any browser-specific issues occur.
+- **Expected Result:** All five pages and their elements should display and function correctly, without browser-specific issues.
+- **Actual Result:** The website displayed the same behaviour and known issues observed during previous testing. No additional Chrome-specific issues were identified.
+- **Status:** Pass
+
+### TC-030: Verify website compatibility in Mozilla Firefox
+- **Preconditions:** Website is accessible. Mozilla Firefox is available.
+- **Steps:**
+  1. Open Mozilla Firefox.
+  2. Navigate to https://bielektra.com/.
+  3. Open each of the five pages: Начало, За нас, Услуги, Проекти, and Контакти.
+  4. Check page layout, text, images, and interactive elements.
+  5. Test the navigation menu and logo functionality.
+  6. Observe whether any browser-specific issues occur.
+- **Expected Result:** All five pages and their elements should display and function correctly, without browser-specific issues.
+- **Actual Result:** The website displayed the same behaviour and known issues observed in Google Chrome. No additional Firefox-specific issues were identified.
+- **Status:** Pass
+
+### TC-031: Verify website compatibility in Microsoft Edge
+- **Preconditions:** Website is accessible. Microsoft Edge is available.
+- **Steps:**
+  1. Open Microsoft Edge.
+  2. Navigate to https://bielektra.com/.
+  3. Open each of the five pages: Начало, За нас, Услуги, Проекти, and Контакти.
+  4. Check page layout, text, images, and interactive elements.
+  5. Test the navigation menu and logo functionality.
+  6. Observe whether any browser-specific issues occur.
+- **Expected Result:** All five pages and their elements should display and function correctly, without browser-specific issues.
+- **Actual Result:** The website displayed the same behaviour and known issues observed in Google Chrome and Mozilla Firefox. No additional Edge-specific issues were identified.
+- **Status:** Pass
+
+---
+
+
 ## Notes
 - Test cases will be expanded as the website's features are explored.
 - Actual results and evidence will be documented during execution.
