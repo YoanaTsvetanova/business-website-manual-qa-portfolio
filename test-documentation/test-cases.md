@@ -388,5 +388,4 @@
 - Known defects are tracked separately in GitHub Issues.
 - Email and phone link behaviour may depend on compatible applications being configured on the user's device.
 - Responsive testing was performed using Chrome DevTools Device Toolbar.
-- The homepage image opacity on tablet and its intentional absence on mobile are expected design behaviours, not defects.
 - Responsive defects are tracked separately under RESP-001 and RESP-002.
