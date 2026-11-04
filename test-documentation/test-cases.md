@@ -78,7 +78,7 @@
   4. Observe any text formatting or animation issues.
 - **Expected Result:** Text is visible, readable, properly formatted, and not cut off.
 - **Actual Result:** Text is readable. The underline positioning and text animation defects previously identified are also present on this page.
-- **Status:** Pass (with known defects)
+- **Status:** Pass
 - **Related Bugs:** BUG-001, BUG-002
 
 ### TC-007: Verify that About Us page images load correctly
@@ -169,6 +169,7 @@
 - **Expected Result:** Project images and descriptions are displayed correctly.
 - **Actual Result:** Project images and descriptions were displayed correctly during inspection.
 - **Status:** Pass
+- **Related Bug:** BUG-001
 
 ### TC-015: Verify that project links or interactive elements work correctly, if available
 - **Preconditions:** Projects page is accessible.
@@ -272,9 +273,63 @@
 
 ---
 
+# 7. Responsive Design
+
+### TC-024: Verify homepage layout on desktop
+- **Preconditions:** Website is accessible.
+- **Steps:**
+  1. Open https://bielektra.com/ in Google Chrome.
+  2. Disable device emulation and use a desktop viewport.
+  3. Inspect the homepage layout, navigation, text, and images.
+- **Expected Result:** The homepage layout is displayed correctly on desktop without unintended overlapping, clipping, or alignment issues.
+- **Actual Result:** The homepage layout works on desktop. Previously identified defects BUG-001 and BUG-002 remain present.
+- **Status:** Pass
+- **Related Bugs:** BUG-001, BUG-002
+
+### TC-025: Verify all five pages on tablet
+- **Preconditions:** Website is accessible.
+- **Steps:**
+  1. Open Chrome DevTools and enable Device Toolbar.
+  2. Set the viewport to tablet size (768 × 1024).
+  3. Open each page: Начало, За нас, Услуги, Проекти, and Контакти.
+  4. Inspect the layout, text, images, navigation, and interactive elements on each page.
+- **Expected Result:** All five pages should display correctly on tablet, with readable text, properly aligned content, and functional interactive elements.
+- **Actual Result:** All five pages load and are accessible. The bottom text touches the page edges on Начало, За нас, Услуги, and Проекти. The dropdown options on Контакти do not fit properly. Previously identified defects BUG-001 and BUG-002 are also present on their affected pages. The homepage image appears with lower opacity on tablet.
+- **Status:** Fail
+- **Related Bugs:** BUG-001, BUG-002, RESP-001, RESP-002, RESP-003
+
+### TC-026: Verify all five pages on mobile
+- **Preconditions:** Website is accessible.
+- **Steps:**
+  1. Open Chrome DevTools and enable Device Toolbar.
+  2. Set the viewport to mobile size (390 × 844).
+  3. Open each page: Начало, За нас, Услуги, Проекти, and Контакти.
+  4. Inspect the layout, text, images, navigation, and interactive elements on each page.
+- **Expected Result:** All five pages should display correctly on mobile, with readable text, properly aligned content, and functional interactive elements.
+- **Actual Result:** Услуги displays correctly. The existing underline defect BUG-001 is present on Начало, За нас, and Проекти. The existing text animation defect BUG-002 is present on Начало and За нас. The dropdown options on Контакти do not fit properly. The homepage image is intentionally not displayed on mobile.
+- **Status:** Fail
+- **Related Bugs:** BUG-001, BUG-002, RESP-002
+
+### TC-027: Verify that no unintended horizontal scrolling occurs
+- **Preconditions:** Website is accessible.
+- **Steps:**
+  1. Open Chrome DevTools and enable Device Toolbar.
+  2. Set the viewport to tablet size (768 × 1024).
+  3. Open each of the five pages and check for unintended horizontal scrolling.
+  4. Repeat the check using mobile size (390 × 844).
+  5. Distinguish unintended page-level horizontal scrolling from intentional horizontal scrolling within interactive elements, if available.
+- **Expected Result:** No unintended horizontal scrolling should occur on any page at tablet or mobile viewport sizes.
+- **Actual Result:** No unintended horizontal scrolling was observed during inspection.
+- **Status:** Pass
+
+---
+
 ## Notes
 - Test cases will be expanded as the website's features are explored.
 - Actual results and evidence will be documented during execution.
 - Only confirmed defects will be added to the bug reports.
 - Known defects are tracked separately in GitHub Issues.
 - Email and phone link behaviour may depend on compatible applications being configured on the user's device.
+- Responsive testing was performed using Chrome DevTools Device Toolbar.
+- The homepage image opacity on tablet and its intentional absence on mobile are expected design behaviours, not defects.
+- Responsive defects are tracked separately under RESP-001 and RESP-002.
