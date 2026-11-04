@@ -143,19 +143,54 @@
 ### TC-012: Verify that the Projects page loads successfully
 - **Preconditions:** Website is accessible.
 - **Steps:**
-  1. Click "Проекти" in the navigation menu.
+  1. Open the homepage.
+  2. Click "Проекти" in the navigation menu.
+  3. Wait for the page to finish loading.
 - **Expected Result:** The Projects page loads successfully.
-- **Actual Result:** Not yet tested.
-- **Status:** Not Run
+- **Actual Result:** The Projects page loaded successfully.
+- **Status:** Pass
+
+### TC-013: Verify that all projects are displayed correctly
+- **Preconditions:** Projects page is accessible.
+- **Steps:**
+  1. Open the Projects page.
+  2. Inspect all displayed projects.
+  3. Check that the project sections and titles are visible.
+- **Expected Result:** All projects are displayed correctly.
+- **Actual Result:** All projects were displayed correctly during inspection.
+- **Status:** Pass
+
+### TC-014: Verify that project images and descriptions are displayed correctly
+- **Preconditions:** Projects page is accessible.
+- **Steps:**
+  1. Open the Projects page.
+  2. Inspect the images and descriptions associated with each project.
+  3. Check that the content is visible and properly displayed.
+- **Expected Result:** Project images and descriptions are displayed correctly.
+- **Actual Result:** Project images and descriptions were displayed correctly during inspection.
+- **Status:** Pass
+
+### TC-015: Verify that project links or interactive elements work correctly, if available
+- **Preconditions:** Projects page is accessible.
+- **Steps:**
+  1. Open the Projects page.
+  2. Locate project links or interactive elements, if available.
+  3. Click each available link or interactive element.
+  4. Check whether it performs the expected action.
+- **Expected Result:** Available project links or interactive elements work correctly and lead to the expected destination or action.
+- **Actual Result:** Available project links or interactive elements worked correctly during inspection.
+- **Status:** Pass
 
 ---
 
 # 5. Contacts (Контакти)
 
-### TC-013: Verify that the Contacts page loads successfully
+### TC-016: Verify that the Contacts page loads successfully
 - **Preconditions:** Website is accessible.
 - **Steps:**
-  1. Click "Контакти" in the navigation menu.
+  1. Open the homepage.
+  2. Click "Контакти" in the navigation menu.
+  3. Wait for the page to finish loading.
 - **Expected Result:** The Contacts page loads successfully.
 - **Actual Result:** Not yet tested.
 - **Status:** Not Run
@@ -164,7 +199,7 @@
 
 # 6. Navigation
 
-### TC-014: Verify navigation links
+### TC-017: Verify navigation links
 - **Preconditions:** Website is accessible.
 - **Steps:**
   1. Open the homepage.
@@ -174,7 +209,7 @@
 - **Actual Result:** Not yet tested.
 - **Status:** Not Run
 
-### TC-015: Verify logo navigation
+### TC-018: Verify logo navigation
 - **Preconditions:** Website is open on a page other than the homepage.
 - **Steps:**
   1. Click the website logo.
