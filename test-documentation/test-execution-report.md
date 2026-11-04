@@ -11,16 +11,16 @@
 
 ## 2. Testing Summary
 
-Initial manual testing of the homepage and About Us page has been performed.
+Manual testing of the Homepage, About Us, and Services pages has been performed.
 
 | Metric | Count |
 |---|---:|
-| Total Test Cases | 12 |
-| Passed | 5 |
+| Total Test Cases | 15 |
+| Passed | 9 |
 | Failed | 2 |
 | Blocked | 0 |
 | Needs Investigation | 0 |
-| Not Run | 5 |
+| Not Run | 4 |
 
 ## 3. Test Execution Results
 
@@ -43,7 +43,12 @@ Initial manual testing of the homepage and About Us page has been performed.
 
 ### Services – Услуги
 
-Not Run
+| Test Case ID | Test Scenario | Status | Related Bug ID |
+|---|---|---|---|
+| TC-008 | Services page loads successfully | Pass | N/A |
+| TC-009 | All listed services are displayed correctly | Pass | N/A |
+| TC-010 | Service descriptions and images are displayed correctly | Pass | N/A |
+| TC-011 | Service-related links or buttons work correctly, if available | Pass | N/A |
 
 ### Projects – Проекти
 
@@ -90,17 +95,17 @@ Both defects have been reported through GitHub Issues and linked to their corres
 
 ## 6. Conclusion
 
-Initial manual testing of the homepage and About Us page has been completed.
+Manual testing of the Homepage, About Us, and Services pages has been completed.
 
-A total of 7 test cases have been executed:
-- 5 Passed
+A total of 11 test cases have been executed:
+- 9 Passed
 - 2 Failed
 
 Two visual defects were identified, reproduced, and documented:
 - BUG-001: Underline overlaps text characters.
 - BUG-002: Inconsistent text animation.
 
-Testing of the remaining website pages and functionality is pending.
+All four Services test cases passed. Testing of the Projects and Contacts pages, navigation functionality, and responsive design and browser compatibility is pending.
 
 ## 7. Notes
 
