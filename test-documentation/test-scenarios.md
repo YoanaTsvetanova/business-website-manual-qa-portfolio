@@ -52,6 +52,6 @@
 
 ## 8. Browser Compatibility
 
-- TS-030: Verify the website in Google Chrome.
-- TS-031: Verify the website in Mozilla Firefox.
-- TS-032: Verify the website in Microsoft Edge.
+- TS-030: Verify the website in Google Chrome. **Status: Pass**
+- TS-031: Verify the website in Mozilla Firefox. **Status: Pass**
+- TS-032: Verify the website in Microsoft Edge. **Status: Pass**
