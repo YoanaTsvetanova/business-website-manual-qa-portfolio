@@ -7,17 +7,17 @@
 - **Testing Type:** Manual Testing
 - **Tester:** Yoana Tsvetanova
 - **Testing Period:** 04 November 2026 – Ongoing
-- **Test Environment:** Google Chrome, Windows (exact OS version and desktop resolution to be documented).
+- **Test Environment:** Google Chrome, Mozilla Firefox, Microsoft Edge, Windows (exact OS version and desktop resolution to be documented).
 - **Responsive Testing:** Chrome DevTools Device Toolbar, tablet (768 × 1024) and mobile (390 × 844) viewports.
 
 ## 2. Testing Summary
 
-Manual testing has been performed on the Homepage, About Us, Services, Projects, and Contacts pages, including desktop, responsive layout, and navigation checks.
+Manual testing has been performed on the Homepage, About Us, Services, Projects, and Contacts pages, including desktop, responsive layout, navigation, and browser compatibility checks.
 
 | Metric | Count |
 |---|---:|
-| Total Test Cases | 28 |
-| Passed | 24 |
+| Total Test Cases | 31 |
+| Passed | 27 |
 | Failed | 4 |
 | Blocked | 0 |
 | Needs Investigation | 0 |
@@ -112,6 +112,21 @@ Manual testing has been performed on the Homepage, About Us, Services, Projects,
 
 **Horizontal scrolling:** No unintended horizontal scrolling was observed during inspection of the tablet and mobile layouts.
 
+### Browser Compatibility
+
+| Test Case ID | Test Scenario | Browser | Status | Related Bug ID |
+|---|---|---|---|---|
+| TC-029 | Verify website compatibility | Google Chrome | Pass | BUG-001, BUG-002, RESP-001, RESP-002, RESP-003 |
+| TC-030 | Verify website compatibility | Mozilla Firefox | Pass | BUG-001, BUG-002, RESP-001, RESP-002, RESP-003 |
+| TC-031 | Verify website compatibility | Microsoft Edge | Pass | BUG-001, BUG-002, RESP-001, RESP-002, RESP-003 |
+
+**Browser compatibility testing results:**
+- The website was tested in Google Chrome, Mozilla Firefox, and Microsoft Edge.
+- All five pages were checked in each browser.
+- Navigation, logo functionality, page layout, text, images, and interactive elements were inspected.
+- The website displayed the same behaviour and known issues in all three browsers.
+- No additional browser-specific issues were identified.
+
 ## 4. Initial Observations
 
 ### OBS-001: Inconsistent text animation during scrolling
@@ -138,4 +153,29 @@ Five defects have been identified during manual testing. Two are original visual
 |---|---|---|---|---|
 | BUG-001 | Underline overlaps text characters | Начало, За нас, Проекти | Low | Open |
 | BUG-002 | Inconsistent text animation | Начало, За нас | Low | Open |
-| RESP-001 | Bottom text touches page edges on tablet | Начало, За нас, Усл
+| RESP-001 | Bottom text touches page edges on tablet | Начало, За нас, Услуги, Проекти | Low | Open |
+| RESP-002 | Contact dropdown options do not fit properly | Контакти | Low | Open |
+| RESP-003 | Homepage image appears with reduced opacity on tablet | Начало | Low | Open |
+
+**Additional notes:**
+- BUG-001 and BUG-002 were reproduced during responsive testing.
+- RESP-001 and RESP-002 were observed during tablet testing; RESP-002 was also observed during mobile testing.
+- RESP-003 concerns the reduced opacity of the Homepage image on tablet. The image being absent on mobile is expected behaviour and is not a defect.
+- No additional browser-specific defects were identified during compatibility testing.
+
+## 6. Conclusion
+
+Manual testing covered all five website pages, including desktop layout, tablet and mobile responsiveness, navigation, and browser compatibility.
+
+A total of 31 test cases were executed:
+- 27 test cases passed.
+- 4 test cases failed.
+- No test cases remain unexecuted.
+
+The website was tested in Google Chrome, Mozilla Firefox, and Microsoft Edge. The same behaviour and known defects were observed across all three browsers, with no additional browser-specific issues identified.
+
+Five defects were identified and documented: BUG-001, BUG-002, RESP-001, RESP-002, and RESP-003. All are currently marked as Open.
+
+The main areas requiring improvement are text formatting, text animation, and responsive layout on tablet and mobile devices.
+
+Further testing should be performed after the reported defects have been fixed to verify the corrections and ensure that no regressions have been introduced.
