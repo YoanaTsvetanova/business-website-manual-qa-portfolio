@@ -30,7 +30,7 @@ Initial manual testing of the homepage has been performed.
 |---|---|---|---|
 | TC-001 | Homepage loads successfully | Pass | N/A |
 | TC-002 | Homepage images load correctly | Pass | N/A |
-| TC-003 | Homepage content and visual elements display correctly | Needs Investigation | N/A |
+| TC-003 | Homepage content and visual elements display correctly | Fail | BUG-002 |
 | TC-004 | Text formatting and presentation | Fail | BUG-001 |
 
 ### About Us – За нас
@@ -55,22 +55,28 @@ Not Run
 
 ## 4. Initial Observations
 
-### OBS-001: Text animation during scrolling
-- **Description:** During scrolling, the second part of an animated text section becomes visible while the first part is still appearing.
-- **Status:** Needs Investigation
-- **Evidence:** Pending.
+### OBS-001: Inconsistent text animation during scrolling
+- **Description:** In some homepage text sections, the second part of the text becomes visible before the first part has finished appearing. Other text sections appear to animate correctly.
+- **Status:** Reported as Defect
+- **Related Bug:** BUG-002
+- **Evidence:** Screen recording attached to GitHub Issue.
 
 ### OBS-002: Underline overlapping text
 - **Description:** Underlined text appears to have the underline overlapping the letters instead of being positioned beneath them.
-- **Status:** Needs Investigation
-- **Evidence:** Pending.
+- **Status:** Reported as Defect
+- **Related Bug:** BUG-001
+- **Evidence:** Screenshot attached to GitHub Issue.
 
 ## 5. Defects Summary
 
-No confirmed defects have been reported yet.
+Two defects have been identified, reproduced, and documented during homepage testing.
 
-The two observations above require further investigation and reproduction before being reported as defects.
+| Bug ID | Description | Severity | Status |
+|---|---|---|---|
+| BUG-001 | Underline overlaps text characters | Low | Open |
+| BUG-002 | Inconsistent text animation across homepage sections | Low | Open |
 
+Both defects have been reported through GitHub Issues and linked to their corresponding test cases.
 ## 6. Conclusion
 
 Initial homepage testing has been completed for two test cases, both of which passed.
