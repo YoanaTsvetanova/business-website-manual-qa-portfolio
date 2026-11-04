@@ -48,8 +48,9 @@
   3. Inspect the position of the underline relative to the letters.
 - **Expected Result:** Underlines appear beneath the text without overlapping the letters.
 - **Actual Result:** The underline appears to overlap the text.
-- **Status:** Needs Investigation
-
+- **Status:** Fail
+-**Related Bug:** BUG-001
+  
 ---
 
 # 2. About Us (За нас)
