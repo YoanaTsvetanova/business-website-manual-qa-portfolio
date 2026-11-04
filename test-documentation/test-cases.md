@@ -88,7 +88,7 @@
   2. Scroll through the entire page.
   3. Inspect all displayed images.
 - **Expected Result:** All images load correctly and are displayed without broken-image indicators or unexpected visual distortion.
-- **Actual Result:** Not yet tested.
+- **Actual Result:** All images loaded correctly during inspection.
 - **Status:** Pass
 
 ---
@@ -98,16 +98,49 @@
 ### TC-008: Verify that the Services page loads successfully
 - **Preconditions:** Website is accessible.
 - **Steps:**
-  1. Click "Услуги" in the navigation menu.
+  1. Open the homepage.
+  2. Click "Услуги" in the navigation menu.
+  3. Wait for the page to finish loading.
 - **Expected Result:** The Services page loads successfully.
-- **Actual Result:** Not yet tested.
-- **Status:** Not Run
+- **Actual Result:** The Services page loaded successfully.
+- **Status:** Pass
+
+### TC-009: Verify that all listed services are displayed correctly
+- **Preconditions:** Services page is accessible.
+- **Steps:**
+  1. Open the Services page.
+  2. Inspect all listed services.
+  3. Check that the service sections and titles are visible.
+- **Expected Result:** All listed services are displayed correctly.
+- **Actual Result:** All listed services were displayed correctly during inspection.
+- **Status:** Pass
+
+### TC-010: Verify that service descriptions and images are displayed correctly
+- **Preconditions:** Services page is accessible.
+- **Steps:**
+  1. Open the Services page.
+  2. Inspect the descriptions and images associated with the services.
+  3. Check that the content is visible and properly displayed.
+- **Expected Result:** Service descriptions and images are displayed correctly.
+- **Actual Result:** Service descriptions and images were displayed correctly during inspection.
+- **Status:** Pass
+
+### TC-011: Verify that links or buttons related to services work correctly, if available
+- **Preconditions:** Services page is accessible.
+- **Steps:**
+  1. Open the Services page.
+  2. Locate links or buttons related to the services, if available.
+  3. Click each available link or button.
+  4. Check whether it performs the expected action.
+- **Expected Result:** Available service-related links or buttons work correctly and lead to the expected destination or action.
+- **Actual Result:** Available service-related links or buttons worked correctly during inspection.
+- **Status:** Pass
 
 ---
 
 # 4. Projects (Проекти)
 
-### TC-009: Verify that the Projects page loads successfully
+### TC-012: Verify that the Projects page loads successfully
 - **Preconditions:** Website is accessible.
 - **Steps:**
   1. Click "Проекти" in the navigation menu.
@@ -119,7 +152,7 @@
 
 # 5. Contacts (Контакти)
 
-### TC-010: Verify that the Contacts page loads successfully
+### TC-013: Verify that the Contacts page loads successfully
 - **Preconditions:** Website is accessible.
 - **Steps:**
   1. Click "Контакти" in the navigation menu.
@@ -131,7 +164,7 @@
 
 # 6. Navigation
 
-### TC-011: Verify navigation links
+### TC-014: Verify navigation links
 - **Preconditions:** Website is accessible.
 - **Steps:**
   1. Open the homepage.
@@ -141,7 +174,7 @@
 - **Actual Result:** Not yet tested.
 - **Status:** Not Run
 
-### TC-012: Verify logo navigation
+### TC-015: Verify logo navigation
 - **Preconditions:** Website is open on a page other than the homepage.
 - **Steps:**
   1. Click the website logo.
