@@ -29,29 +29,32 @@
 - **Actual Result:** Images were visible and loaded correctly during inspection.
 - **Status:** Pass
 
-### TC-003: Verify homepage content and visual elements during scrolling
+### TC-003: Verify text animation during scrolling
 - **Preconditions:** Homepage is accessible.
 - **Steps:**
   1. Open the homepage.
-  2. Locate the animated text section.
-  3. Scroll down through the section.
+  2. Locate animated text sections.
+  3. Scroll through the sections.
   4. Observe the order and timing in which the text appears.
-- **Expected Result:** Text appears in the intended order without unexpected delays or visual interruptions.
-- **Actual Result:** The second part of the text becomes visible while the first part is still appearing.
+- **Expected Result:** Text animation displays in the intended sequence without unexpected timing or visual interruptions.
+- **Actual Result:** In some text sections, the second part becomes visible before the first part has finished appearing.
+- **Affected Pages:** Начало, За нас.
 - **Status:** Fail
-- -**Related Bug:** BUG-002
+- **Related Bug:** BUG-002
 
 ### TC-004: Verify text formatting and underline positioning
-- **Preconditions:** Homepage is accessible.
+- **Preconditions:** Website is accessible.
 - **Steps:**
   1. Open the homepage.
   2. Locate text elements with underlining.
   3. Inspect the position of the underline relative to the letters.
+  4. Repeat the check on the За нас and Проекти pages.
 - **Expected Result:** Underlines appear beneath the text without overlapping the letters.
-- **Actual Result:** The underline appears to overlap the text.
+- **Actual Result:** The underline overlaps the text characters.
+- **Affected Pages:** Начало, За нас, Проекти.
 - **Status:** Fail
--**Related Bug:** BUG-001
-  
+- **Related Bug:** BUG-001
+
 ---
 
 # 2. About Us (За нас)
@@ -59,16 +62,40 @@
 ### TC-005: Verify that the About Us page loads successfully
 - **Preconditions:** Website is accessible.
 - **Steps:**
-  1. Click "За нас" in the navigation menu.
-- **Expected Result:** The About Us page loads successfully.
+  1. Open the homepage.
+  2. Click "За нас" in the navigation menu.
+  3. Wait for the page to finish loading.
+- **Expected Result:** The About Us page loads successfully without visible errors.
+- **Actual Result:** The About Us page loaded successfully.
+- **Status:** Pass
+
+### TC-006: Verify About Us page text content and readability
+- **Preconditions:** About Us page is accessible.
+- **Steps:**
+  1. Open the About Us page.
+  2. Inspect the text content.
+  3. Check whether the text is readable and properly displayed.
+  4. Observe any text formatting or animation issues.
+- **Expected Result:** Text is visible, readable, properly formatted, and not cut off.
+- **Actual Result:** Text is readable. The underline positioning and text animation defects previously identified are also present on this page.
+- **Status:** Pass (with known defects)
+- **Related Bugs:** BUG-001, BUG-002
+
+### TC-007: Verify that About Us page images load correctly
+- **Preconditions:** About Us page is accessible.
+- **Steps:**
+  1. Open the About Us page.
+  2. Scroll through the entire page.
+  3. Inspect all displayed images.
+- **Expected Result:** All images load correctly and are displayed without broken-image indicators or unexpected visual distortion.
 - **Actual Result:** Not yet tested.
-- **Status:** Not Run
+- **Status:** Pass
 
 ---
 
 # 3. Services (Услуги)
 
-### TC-006: Verify that the Services page loads successfully
+### TC-008: Verify that the Services page loads successfully
 - **Preconditions:** Website is accessible.
 - **Steps:**
   1. Click "Услуги" in the navigation menu.
@@ -80,7 +107,7 @@
 
 # 4. Projects (Проекти)
 
-### TC-007: Verify that the Projects page loads successfully
+### TC-009: Verify that the Projects page loads successfully
 - **Preconditions:** Website is accessible.
 - **Steps:**
   1. Click "Проекти" in the navigation menu.
@@ -92,7 +119,7 @@
 
 # 5. Contacts (Контакти)
 
-### TC-008: Verify that the Contacts page loads successfully
+### TC-010: Verify that the Contacts page loads successfully
 - **Preconditions:** Website is accessible.
 - **Steps:**
   1. Click "Контакти" in the navigation menu.
@@ -104,7 +131,7 @@
 
 # 6. Navigation
 
-### TC-009: Verify navigation links
+### TC-011: Verify navigation links
 - **Preconditions:** Website is accessible.
 - **Steps:**
   1. Open the homepage.
@@ -114,7 +141,7 @@
 - **Actual Result:** Not yet tested.
 - **Status:** Not Run
 
-### TC-010: Verify logo navigation
+### TC-012: Verify logo navigation
 - **Preconditions:** Website is open on a page other than the homepage.
 - **Steps:**
   1. Click the website logo.
@@ -128,3 +155,4 @@
 - Test cases will be expanded as the website's features are explored.
 - Actual results and evidence will be documented during execution.
 - Only confirmed defects will be added to the bug reports.
+- Known defects are tracked separately in GitHub Issues.
