@@ -31,7 +31,7 @@ Initial manual testing of the homepage has been performed.
 | TC-001 | Homepage loads successfully | Pass | N/A |
 | TC-002 | Homepage images load correctly | Pass | N/A |
 | TC-003 | Homepage content and visual elements display correctly | Needs Investigation | N/A |
-| TC-004 | Text formatting and presentation | Needs Investigation | N/A |
+| TC-004 | Text formatting and presentation | Fail | BUG-001 |
 
 ### About Us – За нас
 
