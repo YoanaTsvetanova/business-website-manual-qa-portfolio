@@ -12,16 +12,16 @@
 
 ## 2. Testing Summary
 
-Manual testing has been performed on the Homepage, About Us, Services, Projects, and Contacts pages, including desktop and responsive layout checks.
+Manual testing has been performed on the Homepage, About Us, Services, Projects, and Contacts pages, including desktop, responsive layout, and navigation checks.
 
 | Metric | Count |
 |---|---:|
-| Total Test Cases | 27 |
-| Passed | 21 |
+| Total Test Cases | 28 |
+| Passed | 24 |
 | Failed | 4 |
 | Blocked | 0 |
 | Needs Investigation | 0 |
-| Not Run | 2 |
+| Not Run | 0 |
 
 ## 3. Test Execution Results
 
@@ -72,12 +72,21 @@ Manual testing has been performed on the Homepage, About Us, Services, Projects,
 | TC-020 | Contact forms work correctly, if available | Pass | N/A |
 | TC-021 | Location or map is displayed correctly, if available | Pass | N/A |
 
+**Environment note:** The browser recognised the email and phone link protocols (`mailto:` and `tel:`). No compatible desktop applications opened. This was treated as an environment limitation rather than a confirmed website defect.
+
 ### Navigation
 
 | Test Case ID | Test Scenario | Status | Related Bug ID |
 |---|---|---|---|
-| TC-022 | Navigation links work correctly | Not Run | N/A |
-| TC-023 | Logo redirects to the Homepage | Not Run | N/A |
+| TC-022 | All five navigation links open the correct pages | Pass | N/A |
+| TC-023 | Website logo redirects to the Homepage | Pass | N/A |
+| TC-028 | Navigation works consistently across all five pages | Pass | N/A |
+
+**Navigation testing results:**
+- All five navigation links were clickable and responded correctly.
+- Each navigation link opened its corresponding page.
+- Clicking the website logo redirected to the Homepage.
+- Navigation worked consistently across all five pages.
 
 ### Responsive Design
 
@@ -129,48 +138,4 @@ Five defects have been identified during manual testing. Two are original visual
 |---|---|---|---|---|
 | BUG-001 | Underline overlaps text characters | Начало, За нас, Проекти | Low | Open |
 | BUG-002 | Inconsistent text animation | Начало, За нас | Low | Open |
-| RESP-001 | Bottom text touches page edges on tablet | Начало, За нас, Услуги, Проекти | Low | Open |
-| RESP-002 | Contact dropdown options do not fit properly | Контакти | Low | Open |
-| RESP-003 | Homepage image appears with reduced opacity on tablet | Начало | Low | Pending confirmation |
-
-Severity and priority classifications for the responsive defects are preliminary and may be revised.
-
-BUG-001 and BUG-002, along with RESP-001 and RESP-002, have been documented through GitHub Issues. RESP-003 should also be documented in a GitHub Issue if it has not yet been created.
-
-## 6. Conclusion
-
-Manual testing has covered the Homepage, About Us, Services, Projects, and Contacts pages.
-
-A total of 27 test cases have been documented:
-- **21 Passed**
-- **4 Failed**
-- **2 Not Run**
-
-Four test cases failed due to identified visual and responsive defects:
-- TC-003: Inconsistent text animation.
-- TC-004: Underline overlaps text characters.
-- TC-025: Tablet responsive layout issues.
-- TC-026: Mobile responsive layout issues.
-
-Five defects have been identified:
-- BUG-001: Underline overlaps text characters.
-- BUG-002: Inconsistent text animation.
-- RESP-001: Bottom text touches page edges on tablet.
-- RESP-002: Contact dropdown options do not fit properly.
-- RESP-003: Homepage image appears with reduced opacity on tablet.
-
-The horizontal scrolling check passed. The Homepage image being absent on mobile was confirmed as expected behaviour and was not reported as a defect.
-
-Navigation testing remains pending. Further testing and documentation will continue as the project progresses.
-
-## 7. Notes
-
-- Test results will be updated as testing progresses.
-- Confirmed defects are documented separately in GitHub Issues.
-- Screenshots and screen recordings are maintained as supporting test evidence.
-- Test cases are updated based on actual execution results.
-- Known defects are tracked separately and do not automatically cause unrelated test cases to fail.
-- Email and phone link behaviour may depend on compatible applications being configured on the user's device.
-- Responsive testing was performed using Chrome DevTools Device Toolbar.
-- The Homepage image is intentionally hidden on mobile; its reduced opacity on tablet is considered a separate issue.
-- Severity and priority ratings are preliminary and may change after further investigation.
+| RESP-001 | Bottom text touches page edges on tablet | Начало, За нас, Усл
