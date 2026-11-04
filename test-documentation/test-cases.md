@@ -38,7 +38,8 @@
   4. Observe the order and timing in which the text appears.
 - **Expected Result:** Text appears in the intended order without unexpected delays or visual interruptions.
 - **Actual Result:** The second part of the text becomes visible while the first part is still appearing.
-- **Status:** Needs Investigation
+- **Status:** Fail
+- -**Related Bug:** BUG-002
 
 ### TC-004: Verify text formatting and underline positioning
 - **Preconditions:** Homepage is accessible.
