@@ -192,14 +192,67 @@
   2. Click "Контакти" in the navigation menu.
   3. Wait for the page to finish loading.
 - **Expected Result:** The Contacts page loads successfully.
-- **Actual Result:** Not yet tested.
-- **Status:** Not Run
+- **Actual Result:** The Contacts page loaded successfully.
+- **Status:** Pass
+
+### TC-017: Verify that contact information is displayed correctly
+- **Preconditions:** Contacts page is accessible.
+- **Steps:**
+  1. Open the Contacts page.
+  2. Inspect the displayed contact information.
+  3. Check that the information is visible and properly formatted.
+- **Expected Result:** Contact information is displayed correctly and is readable.
+- **Actual Result:** Contact information was displayed correctly during inspection.
+- **Status:** Pass
+
+### TC-018: Verify that email links work correctly
+- **Preconditions:** Contacts page is accessible.
+- **Steps:**
+  1. Open the Contacts page.
+  2. Locate the email address or email link.
+  3. Click the email link.
+  4. Observe the browser response.
+- **Expected Result:** The email link uses the correct email protocol and attempts to open the default email application.
+- **Actual Result:** The browser recognised the mailto: protocol, but no email application opened on the desktop.
+- **Status:** Pass
+
+### TC-019: Verify that phone links work correctly
+- **Preconditions:** Contacts page is accessible.
+- **Steps:**
+  1. Open the Contacts page.
+  2. Locate the phone number or phone link.
+  3. Click the phone link.
+  4. Observe the browser response.
+- **Expected Result:** The phone link uses the correct telephone protocol and attempts to open a compatible calling application.
+- **Actual Result:** The browser recognised the tel: protocol, but no calling application opened on the desktop.
+- **Status:** Pass
+
+### TC-020: Verify that contact forms work correctly, if available
+- **Preconditions:** Contacts page is accessible and a contact form is available.
+- **Steps:**
+  1. Open the Contacts page.
+  2. Locate the contact form.
+  3. Test the available form fields and interactions.
+  4. Check the form's response.
+- **Expected Result:** The contact form works correctly and responds as expected.
+- **Actual Result:** The contact form worked correctly during inspection.
+- **Status:** Pass
+
+### TC-021: Verify that the location or map is displayed correctly, if available
+- **Preconditions:** Contacts page is accessible and a location or map is available.
+- **Steps:**
+  1. Open the Contacts page.
+  2. Locate the displayed location or map.
+  3. Inspect whether it loads and is displayed correctly.
+- **Expected Result:** The location or map is displayed correctly.
+- **Actual Result:** The location or map was displayed correctly during inspection.
+- **Status:** Pass
 
 ---
 
 # 6. Navigation
 
-### TC-017: Verify navigation links
+### TC-022: Verify navigation links
 - **Preconditions:** Website is accessible.
 - **Steps:**
   1. Open the homepage.
@@ -209,7 +262,7 @@
 - **Actual Result:** Not yet tested.
 - **Status:** Not Run
 
-### TC-018: Verify logo navigation
+### TC-023: Verify logo navigation
 - **Preconditions:** Website is open on a page other than the homepage.
 - **Steps:**
   1. Click the website logo.
@@ -224,3 +277,4 @@
 - Actual results and evidence will be documented during execution.
 - Only confirmed defects will be added to the bug reports.
 - Known defects are tracked separately in GitHub Issues.
+- Email and phone link behaviour may depend on compatible applications being configured on the user's device.
